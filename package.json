@@ -1,0 +1,14 @@
+{
+  "name": "react-img-zoom",
+  "main": "dist/index.js",
+  "version": "0.1.0",
+  "author": "Leonardo Felipe Nerone <leonardofelipenerone@gmail.com>",
+  "description": "A React component to zoom images on hover (supports mobile devices)",
+  "bugs": "https://github.com/LeoNero/react-img-zoom/issues",
+  "homepage": "https://github.com/LeoNero/react-img-zoom",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LeoNero/react-img-zoom.git"
+  }
+}
