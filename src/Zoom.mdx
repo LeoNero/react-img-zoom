@@ -1,14 +1,34 @@
 ---
 name: Zoom
+route: /
 ---
 
+import { Playground, PropsTable } from 'docz'
 import Zoom from '.'
 
 # Zoom
 
-<Zoom
-  img="http://bdfjade.com/data/out/89/5941587-natural-image-download.jpg"
-  zoomScale={3}
-  height={600}
-  width={600}
-/>
+<PropsTable of={Zoom} />
+
+## Basic usage
+
+<Playground>
+  <Zoom
+    img="https://cdn.pixabay.com/photo/2018/07/13/10/32/light-bulb-3535435_960_720.jpg"
+    zoomScale={3}
+    height={600}
+    width={600}
+  />
+</Playground>
+
+## It is possible to change the transitionTime
+<Playground>
+  <Zoom
+    img="https://cdn.pixabay.com/photo/2018/07/13/10/32/light-bulb-3535435_960_720.jpg"
+    zoomScale={3}
+    height={600}
+    width={600}
+    transitionTime={0.5}
+  />
+</Playground>
+

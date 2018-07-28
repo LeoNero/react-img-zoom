@@ -115,10 +115,15 @@ class Zoom extends Component {
 }
 
 Zoom.propTypes = {
+  /** The path to the image. It can be a url. */
   img: PropTypes.string.isRequired,
+  /** The zoom scale. */
   zoomScale: PropTypes.number.isRequired,
+  /** The height of the image in pixels */
   height: PropTypes.number.isRequired,
+  /** The width of the image in pixels */
   width: PropTypes.number.isRequired,
+  /** The time (in seconds) that will take to scale your image. */
   transitionTime: PropTypes.number,
 }
 
