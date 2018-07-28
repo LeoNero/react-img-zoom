@@ -18,6 +18,7 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
+      plugins: ['external-helpers'],
     }),
   ],
 }
