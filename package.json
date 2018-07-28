@@ -11,5 +11,39 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:LeoNero/react-img-zoom.git"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "zoom",
+    "mouse"
+  ],
+  "scripts": {
+    "build": "env NODE_ENV=production rollup -c",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "docz": "0.7.1",
+    "docz-plugin-babel6": "0.7.0",
+    "docz-plugin-css": "0.7.1",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-plugin-import": "2.13.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.10.0",
+    "prop-types": "15.6.2",
+    "react": "16.4.1",
+    "rollup-plugin-babel": "3.0.7",
+    "rollup-plugin-eslint": "5.0.0",
+    "rollup-plugin-postcss": "1.6.2"
   }
 }
