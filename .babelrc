@@ -1,4 +1,10 @@
 {
+  "env": {
+    "test": {
+      "presets": ["env", "react"],
+      "plugins": ["transform-postcss"]
+    }
+  },
   "presets": [
     [
       "env",
