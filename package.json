@@ -23,7 +23,8 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "test": "BABEL_ENV=test ava --verbose",
-    "test:watch": "BABEL_ENV=test ava --watch"
+    "test:watch": "BABEL_ENV=test ava --watch",
+    "lint": "eslint './src/**/*.js'"
   },
   "peerDependencies": {
     "prop-types": "*",
