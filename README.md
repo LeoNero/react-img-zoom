@@ -31,4 +31,4 @@ You can refer to the [docs](https://react-img-zoom.netlify.com/) for more inform
 ## To do
 - [ ] [Accessibility improvements](https://github.com/LeoNero/react-img-zoom/issues/14)
 - [ ] [Mobile support](https://github.com/LeoNero/react-img-zoom/issues/13)
-- [_] Improve tests (more cases, snapshot tests, etc)
+- [ ] Improve tests (more cases, snapshot tests, etc)
