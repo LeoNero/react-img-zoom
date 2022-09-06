@@ -13,28 +13,6 @@ class Zoom extends Component {
       mouseY: null,
     }
 
-    const {
-      height,
-      img,
-      transitionTime,
-      width,
-    } = props
-
-    this.outerDivStyle = {
-      height: `${height}px`,
-      width: `${width}px`,
-      overflow: 'hidden',
-    }
-
-    this.innerDivStyle = {
-      height: `${height}px`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      backgroundSize: 'auto 100%',
-      transition: `transform ${transitionTime}s ease-out`,
-      backgroundImage: `url('${img}')`,
-    }
-
     this.imageRef = createRef()
 
     this.handleMouseOver = this.handleMouseOver.bind(this)
@@ -85,13 +63,26 @@ class Zoom extends Component {
       zoom,
     } = this.state
 
-    const {
-      zoomScale,
-    } = this.props
+    const { zoomScale, height, width, img, transitionTime } = this.props
 
     const transform = {
       transformOrigin: `${mouseX}% ${mouseY}%`,
     }
+
+    const outerDivStyle = {
+      height: `${height}px`,
+      width: `${width}px`,
+      overflow: "hidden",
+    };
+
+    const innerDivStyle = {
+      height: `${height}px`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "auto 100%",
+      transition: `transform ${transitionTime}s ease-out`,
+      backgroundImage: `url('${img}')`,
+    };
 
     return (
       <div
