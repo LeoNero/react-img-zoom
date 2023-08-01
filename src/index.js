@@ -69,8 +69,8 @@ class Zoom extends Component {
       },
     } = this.imageRef
 
-    const x = ((e.pageX - offsetLeft) / parseInt(width, 10)) * 100
-    const y = ((e.pageY - offsetTop) / parseInt(height, 10)) * 100
+    const x = ((e.screenX - offsetLeft) / parseInt(width, 10)) * 100
+    const y = ((e.screenY - offsetTop) / parseInt(height, 10)) * 100
 
     this.setState({
       mouseX: x,
